@@ -103,10 +103,10 @@ function hello() {
 
 ### Avantages de `difflib.SequenceMatcher`
 
-✅ **Précis** : Détecte les changements au niveau ligne par ligne
-✅ **Intelligent** : Identifie les déplacements de code
-✅ **Rapide** : Optimisé pour les comparaisons de texte
-✅ **Standard** : Utilisé par Git, SVN, et autres outils de versioning
+- ✅ **Précis** : Détecte les changements au niveau ligne par ligne
+- ✅ **Intelligent** : Identifie les déplacements de code
+- ✅ **Rapide** : Optimisé pour les comparaisons de texte
+- ✅ **Standard** : Utilisé par Git, SVN, et autres outils de versioning
 
 ### Limites
 
@@ -119,6 +119,70 @@ Made changes.
 
 ---
 
+# Installer tkinter si nécessaire
+sudo apt-get install python3-tk
+
+# Lancer l'application
+python3 compare_files3.py
+
+---
+
+Bonne question ! Voici ce qu'il faut installer pour faire fonctionner l'application :
+
+## 📦 Installation Requise
+
+### ✅ **Déjà inclus avec Python** (pas besoin d'installer)
+
+Ces modules font partie de la **bibliothèque standard Python** :
+
+- ✅ `tkinter` - Interface graphique (inclus avec Python sur Windows/Mac)
+- ✅ `os` - Opérations système
+- ✅ `difflib` - **Algorithme de diff** (inclus !)
+- ✅ `fnmatch` - Filtrage de fichiers
+- ✅ `webbrowser` - Ouverture de fichiers HTML
+- ✅ `time` - Gestion du temps
+- ✅ `html` - Échappement HTML
+- ✅ `re` - Expressions régulières
+- ✅ `csv` - Lecture de fichiers CSV
+- ✅ `json` - Gestion de la configuration
+
+### 🔧 **Vérification de tkinter (Linux uniquement)**
+
+Sur **Linux**, `tkinter` peut nécessiter une installation séparée :
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install python3-tk
+
+# Fedora/RHEL
+sudo dnf install python3-tkinter
+
+# Arch Linux
+sudo pacman -S tk
+```
+
+### ✨ **Installation Complète**
+
+**Sur Windows/Mac :**
+```bash
+# Rien à installer ! Tout est déjà inclus avec Python 3.x
+python compare_files3.py
+```
+
+**Sur Linux :**
+```bash
+# Installer tkinter si nécessaire
+sudo apt-get install python3-tk
+
+# Lancer l'application
+python3 compare_files3.py
+```
+
+### 🧪 **Test Rapide**
+
+Pour vérifier que tout est installé :
+
+```python
 # test_imports.py
 try:
     import tkinter
@@ -128,3 +192,12 @@ try:
     print("✅ Toutes les dépendances sont installées !")
 except ImportError as e:
     print(f"❌ Module manquant: {e}")
+```
+
+## 🎯 **Résumé**
+
+**Aucune installation supplémentaire nécessaire !** 🎉
+
+Tous les modules utilisés font partie de la bibliothèque standard Python. Il suffit d'avoir **Python 3.6+** installé.
+
+La seule exception est `tkinter` sur Linux qui peut nécessiter un paquet système supplémentaire.
