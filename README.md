@@ -116,3 +116,15 @@ function hello() {
 C'est le même algorithme utilisé par des outils comme `diff` en Unix et les systèmes de contrôle de version ! 🎯
 
 Made changes.
+
+---
+
+# test_imports.py
+try:
+    import tkinter
+    import difflib
+    import csv
+    import json
+    print("✅ Toutes les dépendances sont installées !")
+except ImportError as e:
+    print(f"❌ Module manquant: {e}")
